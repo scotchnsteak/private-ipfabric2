@@ -1,0 +1,76 @@
+{
+    "column": "hostname",
+    "name": "SNMP Configuration Compliance",
+    "defaultColor": null,
+    "checks": {
+        "0": {
+            "and": [{
+                    "communitiesCount": [
+                        "eq",
+                        0
+                    ]
+                }, {
+                    "usersCount": [
+                        "gte",
+                        1
+                    ]
+                }
+            ]
+        },
+        "10": {
+            "and": [{
+                    "communitiesCount": [
+                        "gte",
+                        1
+                    ]
+                }, {
+                    "usersCount": [
+                        "gte",
+                        1
+                    ]
+                }
+            ]
+        },
+        "20": {
+            "and": [{
+                    "communitiesCount": [
+                        "gte",
+                        1
+                    ]
+                }, {
+                    "usersCount": [
+                        "eq",
+                        0
+                    ]
+                }
+            ]
+        },
+        "30": {
+            "and": [{
+                    "communitiesCount": [
+                        "eq",
+                        0
+                    ]
+                }, {
+                    "usersCount": [
+                        "eq",
+                        0
+                    ]
+                }
+            ]
+        }
+    },
+    "descriptions": {
+        "general": "Verifies Simple Network Management Protocol (SNMP) configuration for network devices.",
+        "checks": {
+            "0": "Devices with at least one configured SNMP user and with no configured SNMP community.",
+            "10": "Devices with at least one configured SNMP user and with at least one configured SNMP community.",
+            "20": "Devices with no SNMP user and with at least one SNMP community configured.",
+            "30": "Devices with no SNMP Users or Communities."
+        }
+    },
+    "groups": [
+    ],
+    "apiEndpoint": "/v1/tables/management/snmp/summary",
+    "webEndpoint": "/technology/management/snmp/summary"
+}

@@ -1,0 +1,6 @@
+{"column":"hostname","name":"Old STP Versions","defaultColor":null,"checks":{"0":{"and":[{"mode":["eq","rapid-pvst"]}]},"10":{"and":[{"mode":["eq","rstp"]}]},"20":{"and":[{"mode":["eq","pvst"]}]},"30":{"and":[{"mode":["eq","mst"]},{"mode":["eq","mstp"]}]}},"descriptions":{},"groups":[{"id":"320668115"}],"apiEndpoint":"/v1/tables/spanning-tree/bridges","webEndpoint":"/technology/spanning-tree/stp-bridges"}
+
+
+
+
+

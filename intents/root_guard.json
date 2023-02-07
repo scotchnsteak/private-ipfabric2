@@ -1,0 +1,2 @@
+{"column":"rootGuard","name":"Root Guard Not Enabled","defaultColor":null,"checks":{"0":{"and":[{"rootGuard":["eq","true"]}]},"30":{"and":[{"rootGuard":["eq","false"]}]}},"descriptions":{"general":"Root Guard Not Enabled","checks":{"0":"Root Guard equals \"yes\"","30":"Root Guard equals \"no\""}},"groups":[{"id":"320668115"}],"apiEndpoint":"/v1/tables/spanning-tree/guards","webEndpoint":"/technology/spanning-tree/stp-guards"}
+

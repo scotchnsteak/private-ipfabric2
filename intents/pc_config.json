@@ -1,0 +1,3 @@
+{"column":"configConsistStatus","name":"Paired Devices With Different Configs","defaultColor":null,"checks":{"0":{"and":[{"configConsistStatus":["eq","success"]}]},"30":{"and":[{"configConsistStatus":["neq","success"]}]}},"descriptions":{"general":"Paired Devices With Different Configs","checks":{"0":"Config Consistency equal to success","30":"Config consistency not equal to success"}},"groups":[],"apiEndpoint":"/v1/tables/platforms/mlag/vpc","webEndpoint":"/technology/port-channels/mlag/vpc"}
+
+
